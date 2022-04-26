@@ -1,0 +1,56 @@
+
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+	background-color: #212121;
+	color:#fff;
+}
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	text-align: center;
+	padding-top: 30px;
+}
+#countdown{
+	position: relative;
+	position: absolute;
+	top: 42%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#count{
+	font-size: 54px;
+	
+}
+.desc{
+	font-size: 18px;
+	display: flex;
+	justify-content: space-around;
+
+}
+.items{
+	display: flex;
+	justify-content: space-around;
+	color: red;
+
+}
+svg{
+	stroke: #fff;
+
+}
+.cl1{
+	
+	animation: 1s tic infinite;
+}
+ 
+.cl2{
+	stroke: red;
+}
+
+
+@keyframes tic {
+ 0% {transform: rotate(0deg);}
+ 
+ 100% {transform: rotate(20deg);}
+}
