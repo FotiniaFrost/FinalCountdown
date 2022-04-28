@@ -1,7 +1,7 @@
 
 body {
-	font-family: "RobotoRegular", sans-serif;
-	font-size: 16px;
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
 	background-color: #212121;
 	color:#fff;
 }
@@ -12,15 +12,14 @@ body {
 	padding-top: 30px;
 }
 #countdown{
-	position: relative;
 	position: absolute;
-	top: 42%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
 #count{
-	font-size: 54px;
+	font-size: 58px;
 	
 }
 .desc{
@@ -33,24 +32,42 @@ body {
 	display: flex;
 	justify-content: space-around;
 	color: red;
+	white-space: nowrap;
 
 }
-svg{
-	stroke: #fff;
 
+.circle{
+	animation: 1s size ease infinite;
 }
-.cl1{
-	
-	animation: 1s tic infinite;
-}
- 
+
 .cl2{
 	stroke: red;
+	animation: 10s toc infinite;
+	animation-timing-function: steps(36);
+}
+
+.cl1{
+	stroke: red;
+	animation: 10s tic infinite;
+	animation-timing-function: steps(36);
 }
 
 
 @keyframes tic {
+0% {transform: rotate(0deg);}
+100% {transform: rotate(-360deg);}
+}
+
+@keyframes toc {
  0% {transform: rotate(0deg);}
- 
- 100% {transform: rotate(20deg);}
+ 100% {transform: rotate(360deg);}
+}
+
+@keyframes size {
+ 0% {height: 90vh;
+ 	 width:100%;
+ }
+ 100% {height: 89vh;
+ 	   width: 99%;
+ }
 }
