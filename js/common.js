@@ -4,7 +4,7 @@ function countdown (){
 	let minElem=document.getElementById('min');
 	let secElem=document.getElementById('sec');
 
-		let eventDate = ('2023-05-18 00:00:00')
+		let eventDate = ('2022-10-18 00:00:00')
 		let eventTimestamp=Date.parse(eventDate);
 		 
 	    let timer =setInterval(()=>{
